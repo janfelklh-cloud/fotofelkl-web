@@ -27,7 +27,7 @@ $(document).ready(function()
 <div class="row">
 <div class="col-1">
 <div id="wb_Image1">
-<a href="./index.html"><img src="images/Foto felkl.png" id="Image1" alt="" width="380" height="97"></a>
+<a href="./index.html"><img src="images/Foto felkl.png" loading="lazy" id="Image1" alt="" width="380" height="97"></a>
 </div>
 </div>
 </div>
@@ -109,20 +109,55 @@ $(document).ready(function()
 <div class="col-2">
 <div id="wb_PhotoGallery1">
 <div id="PhotoGallery1">
-   <div class="thumbnails">
-      <div class="thumbnail">
-         <a href="images/Had.png" data-rel=""><img alt="" src="images/tn_Had.png" class="image" width="303" height="303"></a>
-<div class="caption"></div>
-      </div>
-      <div class="thumbnail">
-         <a href="images/kobylka.png" data-rel=""><img alt="" src="images/tn_kobylka.png" class="image" width="303" height="303"></a>
-<div class="caption"></div>
-      </div>
-      <div class="clearfix visible-col2"></div>
-      <div class="thumbnail">
-         <a href="images/šnek.png" data-rel=""><img alt="" src="images/tn_šnek.png" class="image" width="303" height="303"></a>
-<div class="caption"></div>
-      </div>
+<div class="thumbnails">
+
+  <div class="thumbnail">
+    <a href="images/Had.png">
+      <picture>
+        <source srcset="images/tn_Had.webp" type="image/webp">
+        <img src="images/tn_Had.png"
+             class="image"
+             width="303"
+             height="303"
+             loading="lazy"
+             alt="Zvíře – umělecká fotografie">
+      </picture>
+    </a>
+    <div class="caption"></div>
+  </div>
+
+  <div class="thumbnail">
+    <a href="images/kobylka.png">
+      <picture>
+        <source srcset="images/tn_kobylka.webp" type="image/webp">
+        <img src="images/tn_kobylka.png"
+             class="image"
+             width="303"
+             height="303"
+             loading="lazy"
+             alt="Zvíře – umělecká fotografie">
+      </picture>
+    </a>
+    <div class="caption"></div>
+  </div>
+
+  <div class="clearfix visible-col2"></div>
+
+  <div class="thumbnail">
+    <a href="images/šnek.png">
+      <picture>
+        <source srcset="images/tn_šnek.webp" type="image/webp">
+        <img src="images/tn_šnek.png"
+             class="image"
+             width="303"
+             height="303"
+             loading="lazy"
+             alt="Zvíře – umělecká fotografie">
+      </picture>
+    </a>
+    <div class="caption"></div>
+  </div>
+</div>
       <div class="clearfix visible-col3"></div>
    </div>
 </div>
